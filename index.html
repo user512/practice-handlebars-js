@@ -1,0 +1,17 @@
+<html>
+<head>
+  <title>Handlebars Example</title>
+  <script type="text/javascript" src="Handlebars.js"></script>
+  <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
+  <script type="text/javascript" src="application.js"></script>
+</head>
+<body>
+  <ul class="people"></ul>
+   <script id="people" type="text/x-handlebars-template">
+   {{#each this}}
+   <li class="person"><a href="/{{fname}}">{{fname}} : {{lname}}</a></li>
+   {{/each}}
+   </script>
+
+</body>
+</html>
